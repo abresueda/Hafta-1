@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--mobil cihazlarda görüntülenmesini sağlar.-->
+    <title>Sınıf Tablosu</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            /*tablo hücrelerinin kenarlıklarının birleştirilmesini sağlar.*/
+        }
+        th, td {
+            border: 1px solid black; /*kenarlık ayarı*/
+            padding: 8px; /*iç boşlukları ayarlar*/
+            text-align: left;
+            /*hücre içeriğini sola hizalar.*/
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sınıf Tablosu</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Öğrenci Numarası</th>    
+                <th>Adı</th>
+                <th>Soyadı</th>
+                <th>Notu</th>
+                <th>Doğum Tarihi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>121</td>
+                <td>Kerem</td>
+                <td>Yılmaz</td>
+                <td>85</td>
+                <td>05.05.1995</td>
+            </tr>
+            <tr>
+                <td>134</td>
+                <td>Damla</td>
+                <td>Kara</td>
+                <td>78</td> 
+                <td>02.02.1995</td>
+            </tr>
+            <tr>
+                <td>140</td>
+                <td>Mine</td>
+                <td>Helvacı</td>
+                <td>95</td>
+                <td>03.03.1995</td>
+            </tr>
+            <tr>
+                <td>155</td>
+                <td>Yılmaz</td>
+                <td>Kara</td>
+                <td>71</td>
+                <td>04.04.1995</td>
+            </tr>
+            <tr>
+                <td>166</td>
+                <td>Ayşe</td>
+                <td>Yılmaz</td>
+                <td>86</td>
+                <td>05.05.1995</td>
+            </tr>
+            <tr>
+                <td>171</td>
+                <td>Esma</td>
+                <td>Özer</td>
+                <td>98</td>
+                <td>06.06.1995</td>
+            </tr>
+            <tr>
+                <td>187</td>
+                <td>Murat</td>
+                <td>Yılmaz</td>
+                <td>60</td>
+                <td>07.07.1995</td>
+            </tr>
+            <tr>
+                <td>145</td>
+                <td>Selin</td>
+                <td>Pişkin</td>
+                <td>88</td>
+                <td>08.08.1995</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
