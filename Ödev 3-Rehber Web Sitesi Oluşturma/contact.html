@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:cornflowerblue;
+        }
+
+        nav {
+            background-color: aliceblue;
+            /*Nav öğeleri taşarsa, taşan kısmın görüntülenmesini engeller.*/
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: blue;
+            text-align: center;
+            padding: 14px 16px;
+            /*Bağlantılardaki varsayılan alt çizgiyi kaldırır.*/
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: cornflowerblue;
+            color: blue;
+        }
+
+        h2 {
+            color:black;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="about.html">Hakkımızda</a>
+        <a href="services.html">Hizmetlerimiz</a>
+        <a href="contact.html">İletişim</a>        
+    </nav>
+    <section>
+    <h2>İletişim Bilgilerimiz</h2>
+    <p>Bize ulaşın:</p>
+    <ul>
+        <li>Adres: Cumhuriyet Mah. Atatürk Cad. Taksim/Beyoğlu</li>
+        <li>Telefon: 0 (212) 511 11 11</li>
+        <li>Mail: altin@hukuk.com</li>
+    </ul>
+
+    <form action="#" method="post">
+        <label for="name">Adınız:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mesajınız:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Gönder">
+    </form>
+</section>
+</body>
+</html>
